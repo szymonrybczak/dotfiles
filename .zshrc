@@ -20,6 +20,24 @@ alias lg="lazygit"
 alias :q="exit"
 alias ls="eza -a --no-user --no-time"
 
+# Git aliases
+alias gs="git status"
+alias gd="git diff"
+alias ga="git add"
+alias gc="git commit"
+alias gp="git push"
+alias gl="git pull"
+alias gco="git checkout"
+alias gb="git branch"
+alias glog="git log --oneline --graph --decorate"
+
+# Quick commit and push
+gx() {
+    git add .
+    git commit -m "$1"
+    git push
+}
+
 # React Native Aliases
 alias pod-install-new="bundle install && RCT_NEW_ARCH_ENABLED=1 bundle exec pod install"
 alias pod-install-old="bundle install && bundle exec pod install"
