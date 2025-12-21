@@ -34,6 +34,14 @@ in
     onActivation.cleanup = "zap"; # remove brews not in the list
     onActivation.autoUpdate = true;
     onActivation.upgrade = true;
+    masApps = {
+      "BrightIntosh" = 6452471855;
+      "Craft" = 1487937127;
+      "Klack" = 6446206067;
+      "Magnet" = 441258766;
+      "Spark" = 1176895641;
+      "Things" = 904280696;
+    };
     taps = [
       "oven-sh/bun"
       "sdkman/tap"
@@ -41,6 +49,7 @@ in
     ];
     brews = [
       "bun"
+      "mas"
       "n"
       "opencode"
       "pnpm"
