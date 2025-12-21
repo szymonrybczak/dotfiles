@@ -54,6 +54,7 @@ in
     ];
     casks = [
       "1password"
+      "android-studio"
       "appcleaner"
       "cleanshot"
       "daisydisk"
