@@ -21,6 +21,7 @@ alias :q="exit"
 alias ls="eza -a --no-user --no-time"
 alias f="fork ."
 alias c="cursor"
+alias p="pnpm"
 
 # Git aliases
 alias gs="git status"
