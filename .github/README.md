@@ -132,13 +132,6 @@ $HOME/
 
 These apps need to be installed manually (not available via Homebrew or require licenses):
 
-### From Mac App Store
-
-- **Magnet** - Window manager (tiling)
-- **Things 3** - Task manager
-- **Spark** - Email client
-- **Craft** - Document editor
-
 ### From Web (Direct Download)
 
 - **Cursor** - https://cursor.sh (AI code editor)
