@@ -17,6 +17,7 @@
     git
     git-extras
     git-lfs
+    git-delta # for better git diffs
     gitmux
     tmux
     tree
@@ -30,8 +31,15 @@
     ncdu # disk usage
     hyperfine # benchmarking tool
     lazydocker
+    lazygit # git TUI
     imagemagick
     ffmpeg
     termsvg
+    ripgrep # fast grep replacement
+    cmake
+    ninja
+    coreutils
+    curl
+    stow # for dotfile management if needed
   ];
 }

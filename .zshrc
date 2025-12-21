@@ -8,19 +8,21 @@ alias dot="git --git-dir=$HOME/.dot.git/ --work-tree=$HOME"
 
 # Setup aliases for nix
 if [[ -f "$HOME/.nix/flake.nix" ]]; then
-  case "$(uname)" in
-    Darwin)
-      alias nix-rebuild="sudo darwin-rebuild switch --flake $HOME/.nix#default"
-      ;;
-    Linux)
-      alias nix-rebuild="sudo nixos-rebuild switch --flake $HOME/.nix"
-      ;;
-  esac
+  alias nix-rebuild="sudo darwin-rebuild switch --flake $HOME/.nix#default"
 fi
 
 # Load local secrets and configurations
 if [[ -f $HOME/.zsh_secrets.zsh ]]; then source $HOME/.zsh_secrets.zsh; fi
 if [[ -f $HOME/.zsh_local.zsh ]]; then source $HOME/.zsh_local.zsh; fi
+
+# Custom aliases
+alias lg="lazygit"
+alias :q="exit"
+alias ls="eza -a --no-user --no-time"
+
+# React Native Aliases
+alias pod-install-new="bundle install && RCT_NEW_ARCH_ENABLED=1 bundle exec pod install"
+alias pod-install-old="bundle install && bundle exec pod install"
 
 # Add local bin directory to path
 export PATH="$HOME/.local/bin:$PATH";

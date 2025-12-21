@@ -2,7 +2,7 @@
 
 let
   constants = {
-    username = "satya";
+    username = "szymon";
   };
 in
 {
@@ -48,42 +48,22 @@ in
       "xcode-build-server"
     ];
     casks = [
-      "affinity-designer"
-      "affinity-photo"
-      "alfred"
+      "1password"
       "appcleaner"
-      "balenaetcher"
-      "bitwarden"
       "cleanshot"
-      "cyberduck"
       "daisydisk"
       "discord"
-      "ente-auth"
-      "expo-orbit"
-      "firefox"
+      "fork"
       "ghostty"
-      "github-copilot-for-xcode"
       "google-chrome"
-      "home-assistant"
-      "hoppscotch"
       "iina"
-      "imageoptim"
-      "jetbrains-toolbox"
       "jordanbaird-ice"
       "latest"
-      "maccy"
-      "moonlight"
-      "muzzle"
-      "notunes"
+      "minisim"
       "obsidian"
-      "passepartout"
-      "pika"
-      "popclip"
-      "rustdesk"
-      "surfshark"
-      "syncthing-app"
+      "raycast"
+      "spotify"
       "the-unarchiver"
-      "ticktick"
       "visual-studio-code"
     ];
   };
@@ -103,6 +83,10 @@ in
     dock.mineffect = "scale";
     dock.minimize-to-application = true;
     dock.mru-spaces = false;
+    dock.tilesize = 36;
+    dock.magnification = true;
+    dock.largesize = 54;
+    dock.show-process-indicators = true;
     dock.wvous-bl-corner = 1; # Disable
     dock.wvous-br-corner = 1;
     dock.wvous-tl-corner = 2; # Mission Control
@@ -111,9 +95,11 @@ in
     finder.FXDefaultSearchScope = "SCcf"; # Search current folder
     finder.FXEnableExtensionChangeWarning = false;
     finder.FXRemoveOldTrashItems = true;
+    finder.FXPreferredViewStyle = "Nlsv"; # List view
     finder.NewWindowTarget = "Home";
+    finder.ShowPathbar = true;
     magicmouse.MouseButtonMode = "TwoButton";
-    menuExtraClock.Show24Hour = true;
+    menuExtraClock.Show24Hour = false; # 12-hour clock
     menuExtraClock.ShowDate = 0; # Show date when space is available
     screencapture.location = "~/Desktop";
     spaces.spans-displays = false;
@@ -126,9 +112,13 @@ in
     NSGlobalDomain.AppleEnableMouseSwipeNavigateWithScrolls = false;
     NSGlobalDomain.AppleEnableSwipeNavigateWithScrolls = false;
     NSGlobalDomain.AppleScrollerPagingBehavior = true;
+    NSGlobalDomain.AppleShowAllExtensions = true;
     NSGlobalDomain.AppleShowScrollBars = "WhenScrolling";
     NSGlobalDomain.NSAutomaticQuoteSubstitutionEnabled = false;
     NSGlobalDomain.NSAutomaticPeriodSubstitutionEnabled = false;
+    NSGlobalDomain.NSTableViewDefaultSizeMode = 2; # Medium sidebar icons
+    NSGlobalDomain.KeyRepeat = 2;
+    NSGlobalDomain.InitialKeyRepeat = 15;
   };
 
   system.stateVersion = 6;

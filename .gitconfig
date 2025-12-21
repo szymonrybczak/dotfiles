@@ -1,9 +1,11 @@
 [user]
-	name = Satyajit Sahoo
-	email = satyajit.happy@gmail.com
-	signingkey = 31DAAC48ACF28F61
+	name = szymonrybczak
+	email = szymon.rybczak@gmail.com
+	# signingkey = YOUR_GPG_KEY_ID  # Run: gpg --list-secret-keys --keyid-format=long
 [core]
 	excludesfile = ~/.gitignore_global
+	pager = delta
+	editor = nvim
 [init]
 	defaultBranch = main
 [status]
@@ -15,14 +17,20 @@
 	autoSetupRemote = true
 	followTags = true
 [commit]
-	gpgsign = true
+	gpgsign = false  # Set to true after adding your GPG key
 [tag]
-	gpgSign = true
+	gpgSign = false  # Set to true after adding your GPG key
 [branch]
 	sort = -committerdate
+[interactive]
+	diffFilter = delta --color-only
+[add.interactive]
+	useBuiltin = false
 [delta]
 	navigate = true
 	line-numbers = true
+	side-by-side = true
+	light = false
 [diff]
 	compactionHeuristic = true
 	colorMoved = default
@@ -30,8 +38,11 @@
 	conflictstyle = diff3
 [rerere]
 	enabled = true
+	autoUpdate = true
 [help]
 	autocorrect = 30
+[gpg]
+	program = /opt/homebrew/bin/gpg
 
 [filter "lfs"]
 	clean = git-lfs clean -- %f
@@ -40,10 +51,30 @@
 	required = true
 
 [alias]
+	# From colleague's config
 	ls = log --pretty=format:"%C(yellow)%h%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate
 	pr = "!f() { git fetch -fu ${2:-$(git remote | grep ^upstream || echo origin)} refs/pull/$1/head:pr/$1 && git checkout pr/$1; }; f"
 	track = "!git branch --set-upstream-to=origin/$(git symbolic-ref --short HEAD)"
 	cleanup = !git switch $(git remote show origin | sed -n '/HEAD branch/s/.*: //p') && git pull --prune && git branch --format '%(refname:short) %(upstream:track)' | awk '$2 == \"[gone]\" { print $1 }' | xargs -r git branch -D
 
+	# From your config
+	co-pr = !sh -c 'git fetch origin pull/$1/head:pr/$1 && git checkout pr/$1' -
+	st = status
+	s = switch
+	cp = cherry-pick
+	cpc = cherry-pick --continue
+	cps = cherry-pick --skip
+	cpa = cherry-pick --abort
+	rbc = rebase --continue
+	rbs = rebase --skip
+	rba = rebase --abort
+	ras = restore . --staged
+	rsh = reset --hard
+	puh = push -u origin head
+	wip = commit -am WIP --no-verify
+	amend = commit --amend --no-edit
+	lo = log --oneline
+	tree = log --oneline --graph --decorate --all
+
 [include]
-  path = ~/.gitconfig_local
+	path = ~/.gitconfig_local

@@ -12,18 +12,6 @@
       ...
     }:
     {
-      nixosConfigurations.homelab = nixpkgs.lib.nixosSystem {
-        system = "x86_64-linux";
-        specialArgs = { inherit inputs; };
-        modules = [ ./hosts/homelab/configuration.nix ];
-      };
-
-      nixosConfigurations.acemagic = nixpkgs.lib.nixosSystem {
-        system = "x86_64-linux";
-        specialArgs = { inherit inputs; };
-        modules = [ ./hosts/acemagic/configuration.nix ];
-      };
-
       darwinConfigurations.default = nix-darwin.lib.darwinSystem {
         system = "aarch64-darwin";
         specialArgs = { inherit inputs; };
