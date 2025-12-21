@@ -1,10 +1,8 @@
 shell-integration-features = cursor,title,sudo
 
-adjust-cursor-thickness = 2
 cursor-invert-fg-bg = true
 font-family = FiraCode Nerd Font Mono
-font-size = 12
-font-thicken = true
+font-size = 16
 
 palette = 0=#697098
 palette = 1=#f78c6c
@@ -28,3 +26,4 @@ selection-background = 424762
 selection-foreground = eeffff
 
 macos-titlebar-proxy-icon = hidden
+macos-titlebar-style = tabs
