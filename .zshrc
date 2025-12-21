@@ -19,6 +19,8 @@ if [[ -f $HOME/.zsh_local.zsh ]]; then source $HOME/.zsh_local.zsh; fi
 alias lg="lazygit"
 alias :q="exit"
 alias ls="eza -a --no-user --no-time"
+alias f="fork ."
+alias c="cursor"
 
 # Git aliases
 alias gs="git status"
