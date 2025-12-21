@@ -46,6 +46,7 @@ in
       "ruby-build"
       "cocoapods"
       "xcode-build-server"
+      "wifi-password"
     ];
     casks = [
       "1password"
@@ -63,6 +64,7 @@ in
       "obsidian"
       "raycast"
       "spotify"
+      "sublime-text"
       "the-unarchiver"
       "visual-studio-code"
     ];
