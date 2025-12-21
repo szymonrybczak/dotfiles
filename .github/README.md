@@ -147,6 +147,5 @@ These apps need to be installed manually (not available via Homebrew or require 
 
 ### Other/Optional
 
-- **BrightIntosh** - Screen brightness beyond max
 - **KeyCastr** - Show keystrokes on screen (for screencasts)
 - **Raindrop.io** - Bookmark manager
