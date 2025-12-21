@@ -115,8 +115,8 @@ in
     WindowManager.EnableTilingByEdgeDrag = true;
     WindowManager.EnableTopTilingByEdgeDrag = true;
     NSGlobalDomain."com.apple.mouse.tapBehavior" = 1;
-    NSGlobalDomain.AppleEnableMouseSwipeNavigateWithScrolls = false;
-    NSGlobalDomain.AppleEnableSwipeNavigateWithScrolls = false;
+    NSGlobalDomain.AppleEnableMouseSwipeNavigateWithScrolls = true;
+    NSGlobalDomain.AppleEnableSwipeNavigateWithScrolls = true;
     NSGlobalDomain.AppleScrollerPagingBehavior = true;
     NSGlobalDomain.AppleShowAllExtensions = true;
     NSGlobalDomain.AppleShowScrollBars = "WhenScrolling";
