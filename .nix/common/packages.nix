@@ -27,6 +27,7 @@
     fzf # fuzzy finder
     zoxide # cd replacement
     bat # cat replacement
+    eza # modern ls replacement
     yazi # file manager
     ncdu # disk usage
     hyperfine # benchmarking tool

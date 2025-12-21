@@ -39,7 +39,9 @@ in
       "nikitabobko/tap"
     ];
     brews = [
+      "bun"
       "n"
+      "pnpm"
       "yarn"
       "sdkman-cli"
       "rbenv"
@@ -86,13 +88,13 @@ in
     dock.mineffect = "scale";
     dock.minimize-to-application = true;
     dock.mru-spaces = false;
-    dock.tilesize = 36;
+    dock.tilesize = 48;
     dock.magnification = true;
-    dock.largesize = 54;
+    dock.largesize = 64;
     dock.show-process-indicators = true;
     dock.wvous-bl-corner = 1; # Disable
     dock.wvous-br-corner = 1;
-    dock.wvous-tl-corner = 2; # Mission Control
+    dock.wvous-tl-corner = 1; # Disable
     dock.wvous-tr-corner = 1;
     finder.AppleShowAllExtensions = true;
     finder.FXDefaultSearchScope = "SCcf"; # Search current folder
@@ -123,6 +125,13 @@ in
     NSGlobalDomain.KeyRepeat = 2;
     NSGlobalDomain.InitialKeyRepeat = 15;
   };
+
+  # Clear default apps from Dock on activation
+  system.activationScripts.postActivation.text = ''
+    # Remove all persistent apps from Dock
+    defaults write com.apple.dock persistent-apps -array
+    killall Dock || true
+  '';
 
   system.stateVersion = 6;
 }
