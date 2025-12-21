@@ -42,6 +42,7 @@ in
     brews = [
       "bun"
       "n"
+      "opencode"
       "pnpm"
       "yarn"
       "sdkman-cli"
