@@ -54,6 +54,7 @@ in
     ];
     casks = [
       "1password"
+      "aerospace"
       "android-studio"
       "appcleaner"
       "cleanshot"
