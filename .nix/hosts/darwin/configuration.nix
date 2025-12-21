@@ -67,6 +67,7 @@ in
       "sublime-text"
       "the-unarchiver"
       "visual-studio-code"
+      "zed"
     ];
   };
 

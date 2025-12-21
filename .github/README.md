@@ -101,3 +101,59 @@ $HOME/
 ├── .zshrc                      # Shell configuration
 └── .zprofile                   # Shell profile
 ```
+
+## What's Included
+
+### Apps (via Homebrew casks)
+
+- 1Password, Raycast, Ghostty, Google Chrome
+- Fork, VS Code, Sublime Text, Discord, Spotify, IINA
+- Obsidian, CleanShot, DaisyDisk, AppCleaner
+- Ice, Latest, MiniSim, The Unarchiver
+
+### CLI Tools (via Nix)
+
+- neovim, tmux, git, lazygit, ripgrep
+- fzf, fd, bat, zoxide, yazi
+- nodejs, cmake, ninja, gcc
+- and more...
+
+### Shell
+
+- Zsh with Spaceship prompt
+- fzf-tab, syntax highlighting, autosuggestions
+- `n` for Node.js version management
+- `rbenv` for Ruby version management
+- `sdkman` for Java/Kotlin SDKs
+
+---
+
+## Manual Installs
+
+These apps need to be installed manually (not available via Homebrew or require licenses):
+
+### From Mac App Store
+
+- **Magnet** - Window manager (tiling)
+- **Things 3** - Task manager
+- **Spark** - Email client
+- **Craft** - Document editor
+
+### From Web (Direct Download)
+
+- **Cursor** - https://cursor.sh (AI code editor)
+- **Docker Desktop** - https://www.docker.com/products/docker-desktop
+- **Karabiner-Elements** - https://karabiner-elements.pqrs.org (keyboard customization)
+- **Klack** - https://tryklack.com (mechanical keyboard sounds)
+- **Numi** - https://numi.app (calculator)
+- **Screen Studio** - https://www.screen.studio (screen recording)
+- **SelfControl** - https://selfcontrolapp.com (website blocker)
+- **Slack** - https://slack.com
+- **TablePlus** - https://tableplus.com (database GUI)
+- **Wispr Flow** - https://www.wispr.ai (voice dictation)
+
+### Other/Optional
+
+- **BrightIntosh** - Screen brightness beyond max
+- **KeyCastr** - Show keystrokes on screen (for screencasts)
+- **Raindrop.io** - Bookmark manager
