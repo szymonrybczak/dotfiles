@@ -67,6 +67,7 @@ in
       "android-studio"
       "appcleaner"
       "cleanshot"
+      "cursor"
       "daisydisk"
       "discord"
       "fork"
