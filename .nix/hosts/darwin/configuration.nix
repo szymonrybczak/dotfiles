@@ -35,6 +35,7 @@ in
     onActivation.autoUpdate = true;
     onActivation.upgrade = true;
     taps = [
+      "oven-sh/bun"
       "sdkman/tap"
       "nikitabobko/tap"
     ];
