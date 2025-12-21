@@ -17,7 +17,7 @@
     git
     git-extras
     git-lfs
-    git-delta # for better git diffs
+    delta # for better git diffs
     gitmux
     tmux
     tree
