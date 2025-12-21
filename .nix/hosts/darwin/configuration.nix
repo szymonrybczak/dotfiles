@@ -64,6 +64,7 @@ in
       "google-chrome"
       "iina"
       "jordanbaird-ice"
+      "karabiner-elements"
       "latest"
       "minisim"
       "obsidian"
