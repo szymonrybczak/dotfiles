@@ -42,6 +42,11 @@ gx() {
     git push
 }
 
+# List last 5 branches you've committed to
+ll() {
+    git for-each-ref --sort=-committerdate refs/heads/ --format='%(refname:short) %(committerdate:relative)' | head -n 5
+}
+
 # React Native Aliases
 alias pod-install-new="bundle install && RCT_NEW_ARCH_ENABLED=1 bundle exec pod install"
 alias pod-install-old="bundle install && bundle exec pod install"

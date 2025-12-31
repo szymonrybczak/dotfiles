@@ -91,18 +91,36 @@
                             "to": [{ "key_code": "escape" }]
                         }
                     ]
+                },
+                {
+                    "identifiers": { "is_keyboard": true },
+                    "simple_modifications": [
+                        {
+                            "from": { "key_code": "caps_lock" },
+                            "to": [{ "key_code": "escape" }]
+                        }
+                    ]
+                },
+                {
+                    "identifiers": {
+                        "is_keyboard": true,
+                        "is_pointing_device": true,
+                        "product_id": 12870,
+                        "vendor_id": 6645
+                    },
+                    "ignore": false
                 }
             ],
             "name": "default template",
             "selected": true,
             "simple_modifications": [
                 {
-                    "from": { "key_code": "caps_lock" },
-                    "to": [{ "key_code": "escape" }]
-                },
-                {
                     "from": { "apple_vendor_top_case_key_code": "keyboard_fn" },
                     "to": [{ "key_code": "f19" }]
+                },
+                {
+                    "from": { "key_code": "caps_lock" },
+                    "to": [{ "key_code": "escape" }]
                 }
             ],
             "virtual_hid_keyboard": {
