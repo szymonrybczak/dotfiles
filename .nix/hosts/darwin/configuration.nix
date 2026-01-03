@@ -122,7 +122,7 @@ in
     magicmouse.MouseButtonMode = "TwoButton";
     menuExtraClock.Show24Hour = false; # 12-hour clock
     menuExtraClock.ShowDate = 0; # Show date when space is available
-    screencapture.location = "~/Desktop";
+    screencapture.location = "~/Downloads";
     spaces.spans-displays = false;
     trackpad.Clicking = true;
     WindowManager.EnableStandardClickToShowDesktop = false;
@@ -140,6 +140,33 @@ in
     NSGlobalDomain.NSTableViewDefaultSizeMode = 2; # Medium sidebar icons
     NSGlobalDomain.KeyRepeat = 2;
     NSGlobalDomain.InitialKeyRepeat = 15;
+
+    CustomUserPreferences = {
+      "com.apple.symbolichotkeys" = {
+        AppleSymbolicHotKeys = {
+          # Disable 'Cmd + Space' for Spotlight Search
+          "64" = {
+            enabled = false;
+          };
+          # Disable 'Cmd + Alt + Space' for Finder search window
+          "65" = {
+            enabled = false;
+          };
+          # Disable 'Cmd + Shift + 3' for screenshots
+          "28" = {
+            enabled = false;
+          };
+          # Disable 'Cmd + Shift + 4' for screenshot selection
+          "30" = {
+            enabled = false;
+          };
+          # Disable 'Cmd + Shift + 5' for screenshots
+          "184" = {
+            enabled = false;
+          };
+        };
+      };
+    };
   };
 
   # Clear default apps from Dock on activation
