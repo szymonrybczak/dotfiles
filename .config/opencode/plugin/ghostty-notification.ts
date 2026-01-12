@@ -61,7 +61,7 @@ export const GhosttyNotificationPlugin: Plugin = async ({ $, client, directory }
           };
           const statusMessage = statusMap[session?.status || "idle"] || "Ready for your input";
           
-          await $`osascript -e 'display notification "${statusMessage}" with title "${displayName}" sound name "Glass"'`;
+          await $`osascript -e 'display notification "${statusMessage}" with title "${displayName}" sound name "Blow"'`;
         }
       }
     },
