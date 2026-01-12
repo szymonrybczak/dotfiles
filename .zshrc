@@ -22,6 +22,7 @@ alias ls="eza -a --no-user --no-time"
 alias f="fork ."
 alias c="cursor"
 alias p="pnpm"
+alias oc="opencode"
 
 # Git aliases
 alias gs="git status"
