@@ -66,6 +66,7 @@ in
       "aerospace"
       "android-studio"
       "appcleaner"
+      "claude-code"
       "cleanshot"
       "cursor"
       "daisydisk"
