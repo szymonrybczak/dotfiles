@@ -78,6 +78,7 @@ in
       "karabiner-elements"
       "latest"
       "minisim"
+      "notion"
       "notion-calendar"
       "obsidian"
       "raycast"
