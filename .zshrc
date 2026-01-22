@@ -23,6 +23,7 @@ alias f="fork ."
 alias c="cursor"
 alias p="pnpm"
 alias oc="opencode"
+alias cc="claude"
 
 # Git aliases
 alias gs="git status"
@@ -281,3 +282,5 @@ switch-node() {
 
 add-zsh-hook chpwd switch-node
 switch-node
+
+export PATH="/Users/szymonrybczak/.antigravity/antigravity/bin:$PATH"
