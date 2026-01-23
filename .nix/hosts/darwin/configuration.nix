@@ -71,6 +71,7 @@ in
       "cursor"
       "daisydisk"
       "discord"
+      "figma"
       "fork"
       "ghostty"
       "google-chrome"
