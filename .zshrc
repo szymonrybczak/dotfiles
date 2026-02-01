@@ -37,6 +37,11 @@ alias gco="git checkout"
 alias gb="git branch"
 alias glog="git log --oneline --graph --decorate"
 
+# Worktree
+
+alias wsc="wt switch --create --execute=claude"
+alias ws="wt switch"
+
 # Quick commit and push
 gx() {
     git add .
@@ -284,3 +289,5 @@ add-zsh-hook chpwd switch-node
 switch-node
 
 export PATH="/Users/szymonrybczak/.antigravity/antigravity/bin:$PATH"
+
+if command -v wt >/dev/null 2>&1; then eval "$(command wt config shell init zsh)"; fi
