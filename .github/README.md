@@ -13,7 +13,7 @@ curl -sSf -L https://install.lix.systems/lix | sh -s -- install
 
 # 3. Clone dotfiles as bare repo
 echo ".dot.git" >> ~/.gitignore
-git clone --bare git@github.com:szymonrybczak/new-dotfiles.git $HOME/.dot.git
+git clone --bare git@github.com:szymonrybczak/dotfiles.git $HOME/.dot.git
 alias dot="git --git-dir=$HOME/.dot.git/ --work-tree=$HOME"
 dot config --local status.showUntrackedFiles no
 
