@@ -8,22 +8,26 @@ This repo is managed using a git bare repository.
 # 1. Install Lix (Nix package manager)
 curl -sSf -L https://install.lix.systems/lix | sh -s -- install
 
-# 2. Clone dotfiles as bare repo
+# 2. Install Homebrew
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+
+# 3. Clone dotfiles as bare repo
 echo ".dot.git" >> ~/.gitignore
 git clone --bare git@github.com:szymonrybczak/new-dotfiles.git $HOME/.dot.git
 alias dot="git --git-dir=$HOME/.dot.git/ --work-tree=$HOME"
 dot config --local status.showUntrackedFiles no
 
-# 3. Checkout dotfiles (backup any conflicting files first)
+# 4. Checkout dotfiles (backup any conflicting files first)
 dot checkout
 
-# 4. Restart your terminal, then build the system
-nix-rebuild
+# 5. Restart your terminal, then build the system (first time)
+sudo nix run nix-darwin/nix-darwin-25.11 -- switch --flake ~/.nix#default
+# After this, you can use `nix-rebuild` for future rebuilds
 
-# 5. Install tmux plugins
+# 6. Install tmux plugins
 # Open tmux and press: Ctrl+Space then I
 
-# 6. Open neovim to install plugins
+# 7. Open neovim to install plugins
 nvim
 ```
 
