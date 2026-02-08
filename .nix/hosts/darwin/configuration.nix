@@ -48,7 +48,6 @@ in
       "nikitabobko/tap"
     ];
     brews = [
-      "bun"
       "mas"
       "n"
       "opencode"
