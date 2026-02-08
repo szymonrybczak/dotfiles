@@ -20,14 +20,17 @@ dot config --local status.showUntrackedFiles no
 # 4. Checkout dotfiles (backup any conflicting files first)
 dot checkout
 
-# 5. Restart your terminal, then build the system (first time)
+# 5. Restart your terminal, then add Homebrew taps
+brew tap oven-sh/bun && brew tap sdkman/tap && brew tap nikitabobko/tap
+
+# 6. Build the system (first time)
 sudo nix run nix-darwin/nix-darwin-25.11 -- switch --flake ~/.nix#default
 # After this, you can use `nix-rebuild` for future rebuilds
 
-# 6. Install tmux plugins
+# 7. Install tmux plugins
 # Open tmux and press: Ctrl+Space then I
 
-# 7. Open neovim to install plugins
+# 8. Open neovim to install plugins
 nvim
 ```
 
