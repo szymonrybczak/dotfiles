@@ -86,6 +86,7 @@ in
       "raycast"
       "spotify"
       "sublime-text"
+      "tailscale"
       "the-unarchiver"
       "visual-studio-code"
       "whatsapp"
